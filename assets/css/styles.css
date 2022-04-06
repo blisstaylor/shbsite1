@@ -167,12 +167,22 @@ main#home {
     justify-content: space-between;
     border-top-left-radius: 8.5em;
     border-top-right-radius: 8.5em;
+    padding: 1em;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+  }
 }
 .tile a {
-    padding: 2em;
+    padding: 1em;
 }
 .tile img {
-    width: 100%;
+    /* width: 100%; */
+    margin-top: 1em;
+    height: 10em;
+}
+.tile:hover {
+    top: -10px;
 }
 
 .icon-bottom {
