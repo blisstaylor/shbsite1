@@ -43,6 +43,7 @@ h4 {
 /* caption */
 h5 {
     font-size: 1em;
+    padding-bottom: 1em;
 }
 
 p {
@@ -67,7 +68,7 @@ a:hover {
 header {
     display: flex;
     justify-content: flex-start;
-    background-color: #ececec;
+    background-color: #fff;
     width: 100vw;
     position: fixed;
     z-index: 10;
@@ -83,7 +84,7 @@ header {
 }
 
 .header-menu li {
-    padding-top: 1em;
+    padding-top: 0.5em;
     padding-left: 0.5em;
     font-size: 2em;
 }
@@ -95,7 +96,7 @@ header {
 footer {
     padding-top: 1em;
     padding-bottom: 1em;
-    background-color: #ececec;
+    background-color: #fff; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -115,12 +116,8 @@ footer li {
     padding: 1em;
 }
 
-main {
-    background-color: #fff;
-}
-
 .logo {
-    width: 150px;
+    width: 100px;
 }
 
 .current a {
@@ -203,20 +200,24 @@ main#home {
     transition: top ease 0.5s;
 }
 
+.tile img {
+    width: 100%;
+}
+
 .index-plan {
-    background: #f9ffe4;
+    background: #a9b28b;
 }
 
 .index-build {
-    background: #fff3f0;
+    background: #a65859;
 }
 
 .index-opening {
-    background: #f2fafc;
+    background: #859c9e;
 }
 
 .index-use {
-    background: #f6f8ff;
+    background: #8993ad;
 }
 
 .tile a {
@@ -254,9 +255,12 @@ main#home {
 .intro-hero {
     width: 100%;
     height: 100vh;
-    display: flex;
+    /* display: flex; */
     position: sticky;
-    background-color: #fff;
+    background-size: cover;
+    /* top: 0; */
+    /* z-index: 100; */
+    /* background-color: #fff; */
     /* z-index: -10; */
     /* background-image: url(../images/bridgeiconhalf.png);
     float: right; */
@@ -265,7 +269,7 @@ main#home {
 
 .intro-hero img {
     float: right;
-    position: relative;
+    position: absolute;
 }
 
 .intro-head {
@@ -296,6 +300,8 @@ main#home {
 .column-1 {
     display: flex;
     justify-content: center;
+    width: 80%;
+    margin-left: 10%;
 }
 
 .column-2 {
@@ -333,6 +339,23 @@ main#home {
 }
 
 /* || plan */
+.plan {
+    background-image: url(../images/plan/plan-a.png);
+    top: 0;
+    z-index: -5;
+}
+
+.blur {
+    /* background: rgb(255, 255, 255, 0.4); */
+    backdrop-filter: blur(4px);
+    height: 100vh;
+}
+
+.plan h3,
+.plan h1 {
+    color: #677143;
+}
+
 .plan-1,
 .plan-5 {
     background: #a9b28a;
@@ -362,10 +385,21 @@ main#home {
 }
 
 /* || build */
+.build {
+    background-image: url(../images/build/build-d.png);
+    top: 0;
+    z-index: -5;
+}
+
+.build h3,
+.build h1 {
+    color: #91281a;
+}
+
 .build-1, 
 .build-4,
 .build-6 {
-    background: #f7d4ce;
+    background: #a65859;
 }
 
 .build-2,
@@ -380,11 +414,23 @@ main#home {
 .build-3 h2, 
 .build-3 h5, 
 .build-3 p {
-    color: #fff;
+    color: #fbf0ef;
 }
 
 
 /* || opening */
+.opening {
+    background-image: url(../images/opening/open-a.png);
+    top: 0;
+    z-index: -5;
+}
+
+.opening h3,
+.opening h1 {
+    color: #e2fafe;
+    text-shadow: 2px 2px 20px #606060;
+}
+
 .opening-1 {
     background: #e2fafe;
 }
@@ -393,7 +439,23 @@ main#home {
     background: #839da0;
 }
 
+.opening-2 img {
+    width: 100%;
+}
+
 /* || use */
+.use {
+    background-image: url(../images/use/use-c.png);
+    top: 0;
+    z-index: -5;
+}
+
+.use h3,
+.use h1 {
+    color: #e2e7fd;
+    /* text-shadow: 2px 2px 20px #606060; */
+}
+
 .use-1 {
     background: #e2e7fd;
 }
