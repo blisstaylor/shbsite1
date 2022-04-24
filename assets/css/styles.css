@@ -10,7 +10,7 @@ body {
 
 /* this means the image will never stretch to bigger than it is */
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 /* only for huge numbers on intro hero sections */
@@ -124,7 +124,6 @@ footer li {
     color: black;
 }
 
-
 /* || index */
 
 .intro {
@@ -198,10 +197,6 @@ main#home {
     position: relative;
     top: 0;
     transition: top ease 0.5s;
-}
-
-.tile img {
-    width: 100%;
 }
 
 .index-plan {
@@ -298,15 +293,28 @@ main#home {
 }
 
 .column-1 {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+}
+
+.tiny {
+    width: 33%;
+}
+
+.mini {
+    width: 66%;
 }
 
 .column-2 {
     display: grid;
     grid-template-columns: 33% 1fr;
+    gap: 2em; 
+}
+
+.column-02 {
+    display: grid;
+    grid-template-columns: 1fr 33%;
     gap: 2em; 
 }
 
@@ -368,12 +376,7 @@ main#home {
 
 .plan-3 {
     background: #677143;
-}
-
-.plan-3 h2, 
-.plan-3 h5, 
-.plan-3 p {
-    color: #fff;
+    color: #fffffc;
 }
 
 .plan-3 img {
@@ -391,31 +394,48 @@ main#home {
     z-index: -5;
 }
 
-.build h3,
-.build h1 {
-    color: #91281a;
+.build {
+    color: #701c1c;
 }
 
+/* .b-light h2,
+.b-light h5,
+.b-light p {
+    color: #fbf0ef;
+} */
+
+
 .build-1, 
-.build-4,
-.build-6 {
+.build-5 {
     background: #a65859;
+    color: #fbf0ef;
 }
 
 .build-2,
-.build-5 {
-    background: #fbf0ef;
+.build-4 {
+    background-color: #f9d7d7;
 }
 
 .build-3 {
-    background: #91281a;
+    background: #701c1c;
+    color: #fbf0ef;
 }
 
-.build-3 h2, 
+.build-7 {
+    display: flex;
+    justify-content: center;
+}
+
+.build-6,
+.build-7 {
+    background: #fbf0ef;
+}
+
+/* .build-3 h2, 
 .build-3 h5, 
 .build-3 p {
     color: #fbf0ef;
-}
+} */
 
 
 /* || opening */
@@ -423,24 +443,34 @@ main#home {
     background-image: url(../images/opening/open-a.png);
     top: 0;
     z-index: -5;
-}
-
-.opening h3,
-.opening h1 {
     color: #e2fafe;
     text-shadow: 2px 2px 20px #606060;
 }
 
-.opening-1 {
+.opening-1,
+.opening-3 {
+    background: #8dd5e1;
+}
+
+.opening-2,
+.opening-4,
+.opening-6   {
     background: #e2fafe;
 }
 
-.opening-2 {
-    background: #839da0;
+.opening-5 {
+    background: #5a97a0;
+    color: #e2fafe;
 }
 
-.opening-2 img {
-    width: 100%;
+.opening-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.opening-4 {
+    display: flex;
+    justify-content: center;
 }
 
 /* || use */
@@ -448,59 +478,41 @@ main#home {
     background-image: url(../images/use/use-c.png);
     top: 0;
     z-index: -5;
-}
-
-.use h3,
-.use h1 {
     color: #e2e7fd;
-    /* text-shadow: 2px 2px 20px #606060; */
 }
 
-.use-1 {
+.use-1,
+.use-4,
+.use-6 {
     background: #e2e7fd;
 }
 
-.use-2 {
+.use-2,
+.use-3 {
     background: #f7f8fc;
 }
 
 
+.use-5,
+.use-6 {
+    background: #576aae;
+    color: #e2e7fd;
+}
 
+.about {
+    color: #fff;
+    text-shadow: 2px 2px 20px #606060;
+}
 
+.about a {
+    color: #8dd5e1;
+}
 
-/* vh is view height so 100 is the full view height of your browser */
+.about a:hover {
+    color: #a65859;
+}
 
-
-
-/* use flex box or grid to put the logo in the centre of the homepage background image */
-
-
-
-/* .. go back up the directory tree */
-
-/* h1 a{ 
-put a space after h1 and then a to only apply css to links inside h1s
-} */
-
-/* you can put elements together and make css apply to them all by listing with , in between */
-
-
-
-
-/* .tile {
-    width: 70ch;
-    border: 2px solid #000;
-    padding: 40px (this is inside the border)
-    margin: 20px (this is outside the border)
-} 
-this will make it so everything inside the tile is in a container of 70 characters wide with a black border
-*/
-
-    /* .tile p {
-        line-height: 1.3em;
-        padding-bottom: 1em;
-    } */
-
-
-    /* grid-template-columns: 1fr 1fr 1fr; 
-    check this in the modules*/
+.about-hero {
+    background-image: url(../images/shb-02.jpeg);
+    background-size: cover;
+}
