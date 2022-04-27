@@ -237,6 +237,17 @@ main#home {
     margin: auto;
 }
 
+/* testing here for svg continue icon on opening page */
+
+svg > * {
+    fill: #e2fafe;
+}
+
+svg:hover > * {
+    fill: #8dd5e1;
+}
+
+
 
 /* || content pages */
 
