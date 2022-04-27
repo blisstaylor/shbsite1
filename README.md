@@ -16,12 +16,22 @@ At the beginning of the semester I had basically no coding experience but I dedi
 
 # Prototype comparison
 
-![Prototype of index page](/reflection/index.png)
+![prototype of index page](/reflection/index.png)
+My index page looks very similar to this. Happy with that!
 
+![prototype of content page](/reflection/content.png)
+My content pages use exactly these grids. I have gone rogue in a few areas though, but this was necessary for the content that I used. I did cull the hero graphic thing I had – instead using an image. I just felt that the white background with the graphic was way too stark and uninteresting.
+
+![prototype of end of content page](/reflection/bottom.png)
+This is pretty much what the end of the content pages look like but again, no graphic element – instead going with the slightly blurred background image and coloured text!
 
 
 # Resources
 https://blog.prototypr.io/how-to-make-a-background-blur-in-css-with-one-line-of-code-e446c7236e60
+I used this for the hero images. Very useful!
 
 
 https://css-tricks.com/snippets/css/complete-guide-grid/
+Amazing resource for the grid.
+
+My main resources for this assignment were Riley and Ben! Thanks!
