@@ -1,4 +1,4 @@
-/* general */
+/* || general */
 
 body {
     font-size: 16px;
@@ -8,12 +8,10 @@ body {
     color: #2a2a2a;
 }
 
-/* this means the image will never stretch to bigger than it is */
 img {
     width: 100%;
 }
 
-/* only for huge numbers on intro hero sections */
 h1 {
     font-size: 10em;
     font-family: didot, serif;
@@ -74,10 +72,6 @@ header {
     z-index: 10;
 }
 
-/* header a {
-    color: black;
-} this is for links inside the header*/
-
 .header-menu {
     display: flex;
     justify-content: flex-start;
@@ -125,14 +119,12 @@ footer li {
 }
 
 /* || index */
-
 .intro {
     position: sticky;
     margin-top: 100vh;
 }
 
 main#home {
-    /* margin-top: 100vh; */
     padding-top: 2em;
     padding-left: 2em;
     padding-right: 2em;
@@ -241,8 +233,13 @@ main#home {
     width: 40%;
 }
 
+.centre {
+    margin: auto;
+}
+
 
 /* || content pages */
+
 .intro-hero {
     width: 100%;
     height: 100vh;
@@ -332,6 +329,11 @@ main#home {
 
 .continue img {
     width: 12em;
+    opacity: 0.7;
+}
+
+.continue img:hover {
+    opacity: 1.0;
 }
 
 .dark {
@@ -341,6 +343,15 @@ main#home {
 .blur {
     backdrop-filter: blur(4px);
     height: 100vh;
+}
+
+.end {
+    padding-top: 50vh;
+}
+
+.last {
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
 }
 
 /* || plan */
@@ -360,7 +371,6 @@ main#home {
 .plan-1,
 .plan-5 {
     background: #a9b28a;
-    /* margin-top: 100vh; */
 }
 
 .plan-2 {
@@ -392,12 +402,6 @@ main#home {
     color: #701c1c;
 }
 
-/* .b-light h2,
-.b-light h5,
-.b-light p {
-    color: #fbf0ef;
-} */
-
 .build-1,
 .build-5 {
     background: #a65859;
@@ -414,22 +418,10 @@ main#home {
     color: #fbf0ef;
 }
 
-.build-7 {
-    display: flex;
-    justify-content: center;
-}
-
 .build-6,
 .build-7 {
     background: #fbf0ef;
 }
-
-/* .build-3 h2, 
-.build-3 h5, 
-.build-3 p {
-    color: #fbf0ef;
-} */
-
 
 /* || opening */
 .opening {
@@ -465,11 +457,6 @@ main#home {
     justify-content: center;
 }
 
-.opening-4 {
-    display: flex;
-    justify-content: center;
-}
-
 /* || use */
 .use {
     background-image: url(../images/use/use-c.png);
@@ -500,6 +487,8 @@ main#home {
     color: #e2e7fd;
 }
 
+/* || about */
+
 .about {
     color: #fff;
     text-shadow: 2px 2px 20px #606060;
@@ -516,13 +505,4 @@ main#home {
 .about-hero {
     background-image: url(../images/shb-02.jpeg);
     background-size: cover;
-}
-
-.end {
-    padding-top: 50vh;
-}
-
-.last {
-    border-bottom-left-radius: 2em;
-    border-bottom-right-radius: 2em;
 }
