@@ -28,10 +28,15 @@ This is pretty much what the end of the content pages look like but again, no gr
 
 # Resources
 https://blog.prototypr.io/how-to-make-a-background-blur-in-css-with-one-line-of-code-e446c7236e60
+
 I used this for the hero images. Very useful!
 
-
 https://css-tricks.com/snippets/css/complete-guide-grid/
+
 Amazing resource for the grid.
+
+https://medium.com/@colinlord/how-to-export-svgs-for-the-web-from-illustrator-829bc1c841f6
+
+I used this for my svgs. This was helpful because I had been inserting them with an img tag, but that doesn't allow for interactivity, but the svg code that did exist from my initial export wasn't working. This source showed me the settings to use instead (on Illustrator) but I did have to modify the settings because I did not want the size to be in the html, I wanted to do that in the css.
 
 My main resources for this assignment were Riley and Ben! Thanks!

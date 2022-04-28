@@ -31,7 +31,6 @@ h2 {
 h3 {
     font-size: 2em;
     text-transform: uppercase;
-    /* font-display: bold; */
 }
 
 h4 {
@@ -237,20 +236,12 @@ main#home {
     margin: auto;
 }
 
-/* testing here for svg continue icon on opening page */
-
-svg > * {
-    fill: #e2fafe;
+svg {
+    width: 90%;
+    height: 90%;
 }
-
-svg:hover > * {
-    fill: #8dd5e1;
-}
-
-
 
 /* || content pages */
-
 .intro-hero {
     width: 100%;
     height: 100vh;
@@ -378,7 +369,6 @@ svg:hover > * {
     color: #677143;
 }
 
-
 .plan-1,
 .plan-5 {
     background: #a9b28a;
@@ -399,6 +389,14 @@ svg:hover > * {
 
 .plan-4 {
     background: #eaefe0;
+}
+
+.button-plan svg>* {
+    fill: #677143;
+}
+
+.button-plan svg:hover>* {
+    fill: #a9b28a;
 }
 
 /* || build */
@@ -432,6 +430,14 @@ svg:hover > * {
 .build-6,
 .build-7 {
     background: #fbf0ef;
+}
+
+.button-build svg>* {
+    fill: #701c1c;
+}
+
+.button-build svg:hover>* {
+    fill: #a65859;
 }
 
 /* || opening */
@@ -468,6 +474,14 @@ svg:hover > * {
     justify-content: center;
 }
 
+.button-opening svg>* {
+    fill: #e2fafe;
+}
+
+.button-opening svg:hover>* {
+    fill: #8dd5e1;
+}
+
 /* || use */
 .use {
     background-image: url(../images/use/use-c.png);
@@ -491,15 +505,21 @@ svg:hover > * {
     background: #f7f8fc;
 }
 
-
 .use-5,
 .use-6 {
     background: #576aae;
     color: #e2e7fd;
 }
 
-/* || about */
+.button-use svg>* {
+    fill: #e2e7fd;
+}
 
+.button-use svg:hover>* {
+    fill: #c4d0ff;
+}
+
+/* || about */
 .about {
     color: #fff;
     text-shadow: 2px 2px 20px #606060;
